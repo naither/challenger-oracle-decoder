@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Encriptar</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <!--LOGO-->
+      <div class="column-left">
+        <img
+          src="../challenger/img/Logo.png"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+
+      <!--Central-->
+      <div class="principal">
+        <div id="contenedor">
+          <div  id="parrafo" class="editable placeholder text-input" contenteditable="false">
+            Ingrese el texto aqui
+          </div>
+        </div>
+
+        <p class="aviso">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-alert-hexagon"
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            stroke-width="3"
+            stroke="#ff2825"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"
+            />
+            <path d="M12 8v4" />
+            <path d="M12 16h.01" />
+          </svg>
+          Solo letras minúsculas y sin acentos
+        </p>
+
+        <div class="buttons">
+          <button id="encrypt-btn" class="boton__encrip">Encriptar</button>
+          <button id="decrypt-btn" class="boton__Desencrip">Desencriptar</button>
+        </div>
+      </div>
+
+      <div class="column-right">
+        <div id="output-container" class="output-container">
+          <img src="./img/Muñeco.png" alt="Image" class="output-image" />
+          <div class="output-texts">
+            <h2 class="bold">Ningún mensaje fue encontrado</h2>
+            <p>Ingrese el texto que desea encriptar o desencriptar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
